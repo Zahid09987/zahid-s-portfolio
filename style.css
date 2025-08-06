@@ -26,6 +26,10 @@ html.dark .text-muted {
     opacity: 0.75;
 }
 
+html.dark .card {
+    color: var(--text-color);
+}
+
 html:not(.dark) {
   --bg-color: var(--bg-color-light);
   --text-color: var(--text-color-light);
