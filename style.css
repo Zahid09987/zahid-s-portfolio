@@ -21,6 +21,11 @@ html.dark {
   --shadow: var(--shadow-dark);
 }
 
+html.dark .text-muted {
+    color: var(--text-color) !important;
+    opacity: 0.75;
+}
+
 html:not(.dark) {
   --bg-color: var(--bg-color-light);
   --text-color: var(--text-color-light);
