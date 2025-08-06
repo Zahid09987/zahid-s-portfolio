@@ -22,12 +22,12 @@ html.dark {
 }
 
 html.dark .text-muted {
-    color: var(--text-color) !important;
-    opacity: 0.75;
+  color: var(--text-color) !important;
+  opacity: 0.75;
 }
 
 html.dark .card {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 html:not(.dark) {
@@ -202,6 +202,11 @@ body {
   height: 4px;
   background: var(--primary-color);
   border-radius: 2px;
+}
+
+.text-center .page-title::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer {
