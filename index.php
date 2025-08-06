@@ -1,5 +1,4 @@
 <?php
-// Theme Handling
 $themes = ['light', 'dark', 'system'];
 $default_theme = 'system';
 $current_theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], $themes) ? $_COOKIE['theme'] : $default_theme;
@@ -18,6 +17,7 @@ $current_page = isset($_GET['page']) && in_array($_GET['page'], $pages) ? filter
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,6 +38,7 @@ $current_page = isset($_GET['page']) && in_array($_GET['page'], $pages) ? filter
         })();
     </script>
 </head>
+
 <body>
     <div class="background-shapes"></div>
     <div class="container-fluid main-container">
@@ -62,4 +63,5 @@ $current_page = isset($_GET['page']) && in_array($_GET['page'], $pages) ? filter
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
+
 </html>
