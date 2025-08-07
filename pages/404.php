@@ -4,5 +4,5 @@
     <p class="lead">
         <?php echo _("The page you're looking for doesn't exist."); ?>
     </p>
-    <a href="index.php" class="btn btn-primary"><?php echo _("Go Home"); ?></a>
+    <a href="index.php" class="btn btn-primary"><?php echo _("Go to the home page"); ?></a>
 </div>
