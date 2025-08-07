@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zahid's Portfolio\n"
-"POT-Creation-Date: 2025-08-07 09:22+0700\n"
-"PO-Revision-Date: 2025-08-07 09:23+0700\n"
+"POT-Creation-Date: 2025-08-07 09:25+0700\n"
+"PO-Revision-Date: 2025-08-07 09:26+0700\n"
 "Last-Translator: Zahid Fakhri <zahidrizkyfakhri@gmail.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -24,6 +24,14 @@ msgstr ""
 #: index.php:41
 msgid "Zahid's Portfolio"
 msgstr "Zahid's Portfolio"
+
+#: pages/404.php:5
+msgid "The page you're looking for doesn't exist."
+msgstr ""
+
+#: pages/404.php:7
+msgid "Go Home"
+msgstr ""
 
 #: partials/header.php:3
 msgid "Zahid Fakhri"

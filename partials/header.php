@@ -1,6 +1,6 @@
 <div class="sidebar-content glass-effect p-4 d-flex flex-column h-100">
     <div class="sidebar-header mb-4">
-        <h1 class="mb-1"><?php echo _("Zahid Fakhri"); ?></h1>
+        <h1 class="mb-1"></h1>
         <p class="text-muted"><?php echo _("Informatics"); ?></p>
     </div>
     <ul class="nav nav-pills flex-column mb-auto">
