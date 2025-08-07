@@ -33,12 +33,12 @@ $default_page = 'home';
 $current_page = isset($_GET['page']) && in_array($_GET['page'], $pages) ? filter_input(INPUT_GET, 'page', FILTER_SANITIZE_STRING) : $default_page;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo substr($current_lang, 0, 2); ?>">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahid's Portfolio</title>
+    <title><?php echo _('Zahid\'s Portfolio'); ?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
