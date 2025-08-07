@@ -1,4 +1,21 @@
 <?php
+$supported_langs = ['en_US', 'en_GB'];
+$default_lang = 'en_US';
+
+session_start();
+if (isset($_GET['lang']) && in_array($_GET['lang'], $supported_langs)) {
+    $_SESSION['lang'] = $_GET['lang'];
+    header('Location: ' . strtok($_SERVER["REQUEST_URI"], '?'));
+    exit();
+}
+$current_lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : $default_lang;
+
+putenv("LC_ALL={$current_lang}");
+setlocale(LC_ALL, "{$current_lang}.utf8");
+bindtextdomain('messages', './locale');
+textdomain('messages');
+bind_textdomain_codeset('messages', 'UTF-8');
+
 $themes = ['light', 'dark', 'system'];
 $default_theme = 'system';
 $current_theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], $themes) ? $_COOKIE['theme'] : $default_theme;
