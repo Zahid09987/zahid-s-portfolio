@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zahid's Portfolio\n"
-"POT-Creation-Date: 2025-08-07 09:26+0700\n"
-"PO-Revision-Date: 2025-08-07 09:27+0700\n"
+"POT-Creation-Date: 2025-08-07 09:41+0700\n"
+"PO-Revision-Date: 2025-08-07 09:41+0700\n"
 "Last-Translator: Zahid Fakhri <zahidrizkyfakhri@gmail.com>\n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -25,62 +25,178 @@ msgstr ""
 msgid "Zahid's Portfolio"
 msgstr "Zahid's Portfolio"
 
+#: pages/404.php:3
+msgid "<span class=\"text-danger\">Oops!</span> Page not found."
+msgstr "<span class=\"text-danger\">Oops!</span> Page not found."
+
 #: pages/404.php:5
 msgid "The page you're looking for doesn't exist."
-msgstr ""
+msgstr "The page you're looking for doesn't exist."
 
 #: pages/404.php:7
 msgid "Go to the home page"
-msgstr ""
+msgstr "Go to the home page"
 
-#: partials/header.php:3
-msgid "Zahid Fakhri"
+#: pages/about.php:2 partials/header.php:14
+msgid "About Zahid"
+msgstr "About Zahid"
+
+#: pages/about.php:4
+msgid ""
+"Zahid is a passionate <strong>informatics</strong> student with a keen eye "
+"for technology and design for websites. He has a weak, yet growing, "
+"understanding of programming languages and frameworks background. He also "
+"loves Japanese culture in recent years, such as b&omacr;karoido/bokaro/"
+"VOCALOID, Shinsesaiz&amacr; V/Synthesizer V, CeVio/VoiSona and many more "
+"(such as VOICEPEAK and A.I.VOICE), too.<br><br>\n"
+"        Zahid's journey into the <strong>informatics</strong> (incl. web "
+"development) world began at 2023 while he was signing up for a university "
+"(Universitas Pembangunan Jaya) in <strong>informatics</strong> field. He has "
+"been learning various programming languages, such as SQL/Database and any "
+"other backends such as PHP and Laravel. He's also making a UI/UX (HCI) "
+"project, but was abandoned after the final exam (project exam), due to his "
+"friend named \"Firza\" who was not able to continue/got disconnected from "
+"the project, which is a very sad moment for Zahid.<br><br>\n"
+"        On a good note, Zahid has been contributing to free and open-source "
+"projects (e.g. <a href=\"https://moodle.org/\">Moodle</a>, <a href=\"https://"
+"www.phpmyadmin.net/\">phpMyAdmin</a> and <a href=\"https://weblate.org/"
+"\">Weblate</a>) and proprietary software (e.g. <a href=\"https://crowdin.com/"
+"\">Crowdin</a>) for translation and localization purposes, helping to make "
+"software more accessible to users around the world.<br><br>\n"
+"        In his free time, Zahid enjoys exploring new technologies and "
+"contributing to community/open-source and proprietary software (<a "
+"href=\"https://crowdin.com/\">Crowdin</a>) projects. He also loves to play "
+"rhythmic games, such as Project SEKAI: COLORFUL STAGE (feat. Hatsune Miku) "
+"[Japan]/HATSUNE MIKU: COLORFUL STAGE [Global] on his 9<sup>th</sup> gen "
+"iPad, Umamusume: Pretty Derby on his iPhone 11 and vivid/stasis on his PC "
+"via Steam. You can visit the game using Steam's frame here:"
 msgstr ""
+"Zahid is a passionate <strong>informatics</strong> student with a keen eye "
+"for technology and design for websites. He has a weak, yet growing, "
+"understanding of programming languages and frameworks background. He also "
+"loves Japanese culture in recent years, such as b&omacr;karoido/bokaro/"
+"VOCALOID, Shinsesaiz&amacr; V/Synthesizer V, CeVio/VoiSona and many more "
+"(such as VOICEPEAK and A.I.VOICE), too.<br><br>\n"
+"        Zahid's journey into the <strong>informatics</strong> (incl. web "
+"development) world began at 2023 while he was signing up for a university "
+"(Universitas Pembangunan Jaya) in <strong>informatics</strong> field. He has "
+"been learning various programming languages, such as SQL/Database and any "
+"other backends such as PHP and Laravel. He's also making a UI/UX (HCI) "
+"project, but was abandoned after the final exam (project exam), due to his "
+"friend named \"Firza\" who was not able to continue/got disconnected from "
+"the project, which is a very sad moment for Zahid.<br><br>\n"
+"        On a good note, Zahid has been contributing to free and open-source "
+"projects (e.g. <a href=\"https://moodle.org/\">Moodle</a>, <a href=\"https://"
+"www.phpmyadmin.net/\">phpMyAdmin</a> and <a href=\"https://weblate.org/"
+"\">Weblate</a>) and proprietary software (e.g. <a href=\"https://crowdin.com/"
+"\">Crowdin</a>) for translation and localization purposes, helping to make "
+"software more accessible to users around the world.<br><br>\n"
+"        In his free time, Zahid enjoys exploring new technologies and "
+"contributing to community/open-source and proprietary software (<a "
+"href=\"https://crowdin.com/\">Crowdin</a>) projects. He also loves to play "
+"rhythmic games, such as Project SEKAI: COLORFUL STAGE (feat. Hatsune Miku) "
+"[Japan]/HATSUNE MIKU: COLORFUL STAGE [Global] on his 9<sup>th</sup> gen "
+"iPad, Umamusume: Pretty Derby on his iPhone 11 and vivid/stasis on his PC "
+"via Steam. You can visit the game using Steam's frame here:"
+
+#: pages/contact.php:2
+msgid "Get In Touch"
+msgstr "Get In Touch"
+
+#: pages/contact.php:4
+msgid ""
+"He's currently open to any opportunities, whether it's a full-time role or a "
+"freelance project. If you have an idea or a project in mind, feel free to "
+"reach out!"
+msgstr ""
+"He's currently open to any opportunities, whether it's a full-time role or a "
+"freelance project. If you have an idea or a project in mind, feel free to "
+"reach out!"
+
+#: pages/contact.php:8
+msgid "Name"
+msgstr "Name"
+
+#: pages/contact.php:12
+msgid "Email address"
+msgstr "Email address"
+
+#: pages/contact.php:16
+msgid "Message"
+msgstr "Message"
+
+#: pages/contact.php:19
+msgid "Send Message"
+msgstr "Send Message"
+
+#: pages/home.php:2
+msgid "Welcome to Zahid's Portfolio"
+msgstr "Welcome to Zahid's Portfolio"
+
+#: pages/home.php:3
+msgid "He loves what he does."
+msgstr "He loves what he does."
+
+#: pages/home.php:4
+msgid "View His Work"
+msgstr "View His Work"
+
+#: pages/portfolio.php:2
+msgid "Zahid's Work"
+msgstr "Zahid's Work"
+
+#: pages/portfolio.php:8
+msgid "UI/UX Project"
+msgstr "UI/UX Project"
+
+#: pages/portfolio.php:9
+msgid ""
+"This is the Project of an e-parking inside and outside UPJ we want to make, "
+"but has abandoned."
+msgstr ""
+"This is the Project of an e-parking inside and outside UPJ we want to make, "
+"but has abandoned."
 
 #: partials/header.php:4
 msgid "Informatics"
-msgstr ""
+msgstr "Informatics"
 
 #: partials/header.php:9
 msgid "Home"
-msgstr ""
-
-#: partials/header.php:14
-msgid "About Zahid"
-msgstr ""
+msgstr "Home"
 
 #: partials/header.php:19
 msgid "Portfolio"
-msgstr ""
+msgstr "Portfolio"
 
 #: partials/header.php:24
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: partials/header.php:29
 msgid "Theme"
-msgstr ""
+msgstr "Theme"
 
 #: partials/header.php:31
 msgid "Light"
-msgstr ""
+msgstr "Light"
 
 #: partials/header.php:32
 msgid "Dark"
-msgstr ""
+msgstr "Dark"
 
 #: partials/header.php:33
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: partials/header.php:37
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 #: partials/header.php:38
 msgid "English (US)"
-msgstr ""
+msgstr "English (US)"
 
 #: partials/header.php:39
 msgid "English (UK)"
-msgstr ""
+msgstr "English (UK)"
