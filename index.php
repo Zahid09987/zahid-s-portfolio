@@ -44,7 +44,6 @@ $current_page = isset($_GET['page']) && in_array($_GET['page'], $pages) ? filter
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <img src="favicon/user-tie-solid-full.svg" alt="Portfolio Icon">
     <script>
         (function() {
             const theme = "<?php echo $current_theme; ?>";
