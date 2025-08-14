@@ -1,6 +1,3 @@
-# This is a configuration file for Weblate.
-# It is used to define the project and component.
-
 # The project slug.
 project: zahid-s-portfolio
 # The component slug.
