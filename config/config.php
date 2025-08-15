@@ -2,6 +2,8 @@
 define('LANG_DIR', __DIR__ . '/../locale/');
 define('DEFAULT_LANG', 'en-us');
 
+require_once 'keys.php';
+
 $available_langs = [];
 foreach (glob(LANG_DIR . '*.json') as $file) {
     $lang_code = basename($file, '.json');

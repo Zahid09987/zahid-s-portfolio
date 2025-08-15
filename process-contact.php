@@ -9,6 +9,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     require 'vendor/autoload.php';
     require 'config/config.php';
 
+    if (!isset($_POST['g-recaptcha-response'])) {
+        $_SESSION['form_status'] = ['success' => false, 'message' => 'reCAPTCHA verification failed.'];
+        header('Location: index.php?page=contact');
+        exit();
+    }
+
+    $recaptcha_secret = RECAPTCHA_SECRET_KEY;
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+
+    $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+    $recaptcha_data = [
+        'secret' => $recaptcha_secret,
+        'response' => $recaptcha_response,
+    ];
+
+    $options = [
+        'http' => [
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($recaptcha_data),
+        ],
+    ];
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($recaptcha_url, false, $context);
+    $result_json = json_decode($result, true);
+
+    if (!$result_json['success']) {
+        $_SESSION['form_status'] = ['success' => false, 'message' => 'reCAPTCHA verification failed.'];
+        header('Location: index.php?page=contact');
+        exit();
+    }
+
     $name = htmlspecialchars(trim($_POST['name']));
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(trim($_POST['message']));

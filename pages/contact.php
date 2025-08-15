@@ -31,8 +31,14 @@ endif;
         <label for="message" class="form-label"><?php echo t("Message"); ?></label>
         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
     </div>
-    <button type="submit" class="btn btn-primary"><?php echo t("Submit"); ?></button>
+    <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="<?php echo RECAPTCHA_SITE_KEY; ?>" data-callback='onSubmit' data-action='submit'><?php echo t("Submit"); ?></button>
 </form>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.querySelector('form').submit();
+    }
+</script>
 
 <div class="text-center mt-5">
     <h2><?php echo t("Follow Zahid on Social Media"); ?></h2>
